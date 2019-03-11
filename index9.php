@@ -35,4 +35,49 @@ foreach ($paises as $pais => $ciudades) {
       echo $ciudad. '<br>';
    }
 }
+
+$valores = [23, 54, 32, 67, 34, 78, 98, 56, 21, 34, 57, 92, 12, 5, 61];
+$valores2 = [23, 54, 32, 67, 34, 78, 98, 56, 21, 34, 57, 92, 12, 5, 61];
+
+//ordenar array manualmente
+for($i=0;$i<count($valores);$i++)
+   {
+      for($j=$i+1;$j<count($valores);$j++)
+      {
+         if($valores[$j]<$valores[$i])
+         {
+            $tmp=$valores[$i];
+            $valores[$i]=$valores[$j];
+            $valores[$j]=$tmp;
+         }
+      }
+   }
+
+
+foreach ($valores as $value) {
+   echo $value. '<br>';
+}
+
+// ordenar array con funciones 
+
+ asort($valores2); //funciones de ordenamiento ambas
+ sort($valores2);
+
+foreach ($valores2 as $value) {
+   echo $value. '<br>';
+}
+
+echo 'valores mas bajos';
+for ($i=0; $i <3 ; $i++) { 
+   echo $valores[$i].',';
+}
+
+echo 'valores mas altos';
+for ($i=count($valores2)-1; $i>=count($valores2)-3; $i--) { 
+   echo $valores[$i].',';
+}
+echo 'valores mas altos';
+for ($i=count($valores2)-3; $i<count($valores2); $i++) { 
+   echo $valores2[$i].',';
+}
 ?>
