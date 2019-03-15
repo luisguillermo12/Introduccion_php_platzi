@@ -80,4 +80,7 @@ echo 'valores mas altos';
 for ($i=count($valores2)-3; $i<count($valores2); $i++) { 
    echo $valores2[$i].',';
 }
+
+
+//queda pendiente hacerlo eliminando las claves de un arreglo; y los tipos de datos especiales esos
 ?>
