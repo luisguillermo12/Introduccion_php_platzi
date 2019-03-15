@@ -1,9 +1,12 @@
 <?php
- /* programacion horientada a objetos paradigma de desarrollo de aplicaciones modulares y reutilizables
- posee caracteristicas q ayudan a estructurar mejor la palicaciones
+ /* programacion orientada a objetos paradigma de desarrollo de aplicaciones modulares y reutilizables
+ posee caracteristicas q ayudan a estructurar mejor la aplicaciones
 
-clase : es una plantilla de algo
+clase : es una plantilla de algo , abstracto 
+instancia =  representacion concreta de esa clase abstracta
+clases ayudan a definir las caracteristicas de las instancias
 
+encapsular  = ocultar ciertas caracteristicas de nuestro objeto y solo mostrar las q se utilizan fuera de la clase
 */
 
 
@@ -64,7 +67,7 @@ require('jobs.php');
             $totalMonths = 0;
             for($idx = 0;$idx < count($jobs); $idx++) {
               // $totalMonths = $totalMonths + $jobs[$idx]['months'];
-              $totalMonths += $jobs[$idx]['months'];
+              $totalMonths += $jobs[$idx]->months;
               if($totalMonths > $limitMonths) {
                 break;
               }
