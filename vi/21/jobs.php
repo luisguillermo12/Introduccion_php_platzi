@@ -2,11 +2,7 @@
 
 require 'app/Models/Job.php';
 require 'app/Models/Project.php';
-require_once 'app/lib1/Project.php';
 require_once 'app/Models/Printable.php';
-
-
-use App\Models\{Job, Project}; // php 7 agrupar clases a utilizar
 
 $job1 = new Job('PHP Developer', 'This is an awesome job!!!');
 $job1->months = 16;
@@ -18,9 +14,6 @@ $job3 = new Job('Devops', 'This is an awesome job!!!');
 $job3->months = 32;
 
 $project1 = new Project('Project 1', 'Description 1');
-
-
-$projectLib = new lib1\Project();
 
 $jobs = [
     $job1,

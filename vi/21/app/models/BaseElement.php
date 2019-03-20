@@ -1,5 +1,5 @@
 <?php
-namespace App\models;
+
 require_once 'Printable.php';
 
 class BaseElement implements Printable {
