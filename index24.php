@@ -1,6 +1,9 @@
 <?php
 /*
-Composer :
+no siempre tenemos q reinventar la rueda
+Composer : nos ayudara a traer librerias de tercero a nuestro proyecto
+composer implementa el estandar psr4 , autocargado de archivos automatico
+
  */
 
 require_once('jobs.php');
